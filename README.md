@@ -1,11 +1,3 @@
-🎉 **8/8 tests PASSED!** Perfect score!
-
----
-
-### Final File: `README.md`
-
-Open `C:\Users\kamba\Desktop\CV_ALPR_SYSTEM\alpr_system\README.md` and paste:
-
 ```markdown
 # Real-Time Automatic License Plate Recognition (ALPR) System
 
