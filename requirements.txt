@@ -1,0 +1,13 @@
+ultralytics
+opencv-python
+pytesseract
+Pillow
+numpy
+streamlit
+pyyaml
+torch
+torchvision
+pytest
+filterpy
+scipy
+lapx

@@ -1,0 +1,24 @@
+model:
+  weights_path: "models/yolov8_plate.pt"
+  engine_path: "models/yolov8_plate.engine"
+  confidence_threshold: 0.3
+  iou_threshold: 0.45
+  use_tensorrt: false
+
+ocr:
+  tesseract_config: "--oem 3 --psm 7 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  min_confidence: 20
+  
+tracker:
+  max_age: 10
+  min_hits: 3
+  iou_threshold: 0.3
+
+database:
+  db_path: "alpr_logs.db"
+
+video:
+  source: 0
+  frame_width: 1280
+  frame_height: 720
+  target_fps: 30

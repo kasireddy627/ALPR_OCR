@@ -1,0 +1,8 @@
+.pytest_cache/
+cv_venv/
+
+# Ignore entire data folder
+data/
+
+# Ignore specific PDF
+ALPR_Project_Documentation.pdf
