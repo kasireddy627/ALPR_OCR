@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  alpr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: alpr-system:latest
+    container_name: alpr_app
+
+    ports:
+      - "8501:8501"          # Streamlit UI
+
+    volumes:
+      # Persist the SQLite database and uploaded files between restarts
+      - ./data:/app/data
+      # Mount your trained weights without rebuilding the image
+      - ./models:/app/models:ro
+
+    environment:
+      - TESSERACT_CMD=/usr/bin/tesseract
+      - PYTHONUNBUFFERED=1
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
