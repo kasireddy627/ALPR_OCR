@@ -1,30 +1,10 @@
-# ultralytics==8.2.0
-
-# opencv-python-headless==4.8.1.78
-
-# pytesseract==0.3.10
-# Pillow==10.2.0
-# numpy==1.26.4
-# scipy==1.11.4
-# filterpy==1.4.5
-# lapx==0.5.5
-
-# torch==2.2.2
-# torchvision==0.17.2
-
-# streamlit==1.33.0
-# pyyaml==6.0.1
-
-ultralytics==8.2.0
-opencv-python-headless==4.9.0.80
-pytesseract==0.3.10
-Pillow==10.2.0
-numpy==1.26.4
-streamlit==1.35.0
-pyyaml==6.0.1
-filterpy==1.4.5
-scipy==1.13.0
-lapx==0.5.5
-pytest==8.2.0
-torch==2.2.2
-torchvision==0.17.2
+ultralytics
+opencv-python-headless
+pytesseract
+Pillow>=10.3
+numpy
+scipy
+filterpy
+lapx
+streamlit
+pyyaml
