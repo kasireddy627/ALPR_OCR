@@ -66,7 +66,8 @@ if st.sidebar.button("Clear Database"):
 # ------------------------------------------------------------------
 def show_preprocessing(cleaned):
     st.subheader("Preprocessed Image (Used for OCR)")
-    st.image(cleaned, use_container_width=True)
+    # st.image(cleaned, use_container_width=True)
+    st.image(cleaned, width='stretch')
 
 # ------------------------------------------------------------------
 # IMAGE MODE
@@ -123,7 +124,7 @@ if source_mode == "Upload Image":
         st.markdown("### Detection Log")
         reads = pipeline.database.get_all_reads()
         if reads:
-            st.dataframe(reads, use_container_width=True)
+            st.dataframe(reads, width='stretch')
         else:
             st.info("No records")
 
